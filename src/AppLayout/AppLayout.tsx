@@ -27,7 +27,7 @@ const AppLayout = () => {
           items={COMPONENT_ITEMS}
         />
       </Layout.Sider>
-      <Layout>
+      <Layout style={{ marginLeft: 264 }}>
         <Layout.Content className={AppLayoutStyle.AppContent}>
           <AppRouter />
         </Layout.Content>
