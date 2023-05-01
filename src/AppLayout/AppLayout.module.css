@@ -1,0 +1,23 @@
+.AppLayoutContainer {
+  min-height: 100vh;
+}
+
+.AppSidebar {
+  padding: 32px 16px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.AppContent {
+  padding: 32px 16px;
+}
+.AppFooter {
+  text-align: center;
+}
+
+.AppBrand {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4337c9;
+}
+.AppMenu {
+  border-inline-end: none !important;
+}
