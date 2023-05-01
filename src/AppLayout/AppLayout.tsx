@@ -1,12 +1,13 @@
 import { Divider, Layout, Menu, Typography } from 'antd';
 import React from 'react';
 import AppLayoutStyle from './AppLayout.module.css';
-import { COMPONENTS, COMPONENT_ITEMS } from '../constants';
+import { COMPONENT_ITEMS } from '../constants';
 import AppRouter from '../AppRouter';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const AppLayout = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <Layout className={AppLayoutStyle.AppLayoutContainer}>
@@ -21,7 +22,7 @@ const AppLayout = () => {
         <Divider />
         <Menu
           onSelect={(info) => navigate(info.key)}
-          defaultSelectedKeys={[COMPONENTS.SIGNIN]}
+          defaultSelectedKeys={[location.pathname.slice(1)]}
           className={AppLayoutStyle.AppMenu}
           items={COMPONENT_ITEMS}
         />
