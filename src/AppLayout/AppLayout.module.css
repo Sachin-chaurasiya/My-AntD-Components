@@ -14,9 +14,11 @@
 }
 
 .AppBrand {
+  display: block;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #4337c9;
+  text-align: center;
 }
 .AppMenu {
   border-inline-end: none !important;
